@@ -230,7 +230,7 @@
                 <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/aff-hsl-hardlight.png" class="img-fluid" alt="Day photo turned into night">
                   <div class="portfolio-info">
-                    <h4>HSL Hardlihgt</h4>
+                    <h4>HSL Hardlight</h4>
                     <p>Affinity Photo</p>
                     <div class="portfolio-links">
                       <a href="assets/img/portfolio/aff-hsl-hardlight.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
@@ -712,7 +712,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -725,14 +725,14 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Let's work</button></div>
+              <div class="text-center"><button type="submit" id="send">Let's work</button></div>
             </form>
 
           </div>
@@ -782,7 +782,19 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://kit.fontawesome.com/b687a3253e.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("KcC0QWwcniLuuJnfJ");
+    })();
+  </script>
+  <script>
+    /**
+      User ID KcC0QWwcniLuuJnfJ
+          Access Token =JMI5ykt0FD9aUhpsyo10T
+   **/
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
