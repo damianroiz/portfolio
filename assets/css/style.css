@@ -752,7 +752,7 @@ section {
 ///////////////////////////////////////////////////////////////*/
 
 .img-icon {
-  filter: opacity(0.4) drop-shadow(0 0 0 rgb(11, 11, 11));
+  filter: invert();
   width: 100px;
 }
 
