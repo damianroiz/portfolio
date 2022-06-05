@@ -1097,13 +1097,10 @@ section {
   background: #45505b;
   font-size: 14px;
   text-align: center;
-<<<<<<< HEAD
   padding: 30px 0 30px 0px;
-=======
-  padding: 30px 0 30px 100px;
->>>>>>> 4a675f5ddc1935e0941b7269483618d23a848a08
   width: 100%;
 }
+
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
