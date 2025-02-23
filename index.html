@@ -3,739 +3,265 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>Damian Roiz</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="assets/img/logoDamian.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Damian Roiz - Web Development</title>
+    <script type="module" defer src="script.js"></script>
   </head>
-
   <body>
-    <!-- ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"
-              ><i class="bx bx-home"></i> <span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"
-              ><i class="bx bx-user"></i> <span>About</span></a
-            >
-          </li>
-          <li>
-            <a href="#services" class="nav-link scrollto"
-              ><i class="bx bx-server"></i> <span>Services</span></a
-            >
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link scrollto"
-              ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
-            >
-          </li>
-          <li>
-            <a href="#contact" class="nav-link scrollto"
-              ><i class="bx bx-envelope"></i> <span>Contact</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-menu -->
-    </header>
-    <!-- End Header -->
+    <header>
+      <div class="header__container">
+        <!-- <nav>
+          <ul class="nav__menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav> -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <!-- <nav id="navbar" class="navbar nav-menu">
+            <ul>
+              <li>
+                <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home">H</i> <span>Home</span></a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link scrollto"><i class="bx bx-user">A</i> <span>About</span></a>
+              </li>
+              <li>
+                <a href="#services" class="nav-link scrollto"><i class="bx bx-server">S</i> <span>Services</span></a>
+              </li>
+              <li>
+                <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content">P</i> <span>Portfolio</span></a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope">C</i> <span>Contact</span></a>
+              </li>
+            </ul>
+          </nav> -->
+          
+
+      <div class="header__title">
         <h1>I'm Damian</h1>
-        <p>
-          And I can help you develop 
-          <span
-            class="typed"
-            data-typed-items="Digital Design, Web Solutions, Mobile Compatibility, e-Commerce Integration, Marketing Strategies, Analytics"
-          ></span>
-        </p>
-        <div class="social-links"> 
-          <a
-            href="https://github.com/damianroiz"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="github"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/damianroiz/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="linkedin"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://twitter.com/damianroiz"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="twitter"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/damianroiz/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="instagram"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Hero -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            I got first exposed to web development by starting a
-            fitness blog on WordPress back in 2016. Later in 2019, I became
-            obsessed with learning everything I could about web-based solutions that could could create great user interatiions. I believe that things that look
-            beautiful must also be functional and work great. This is my principle in every project I develop.
-          </p><br>
-          <p>
-            I take pride in saying that everything I've learn as a developer has been due to
-            countless self-teaching hours on free platforms such as
-            FreeCodeCamp, FullStack Open, Udemy, among others..., as well as official documentation from different
-            technologies. Having the freedom to test and apply new technolgies in order to continuing delivering innovative solutions to my clients has always been a great source or motivation.
-          </p><br>
-          <p>
-            Therefore, if you are looking to increase business activity through solid web solutions that could exceed the expectations of your customers, contact me.
+        <div class="typing-container">
+          <p>And I can help you with...<span class="featured-text"></span>
+            <span class="cursor blink">&nbsp;</span>
           </p>
-          <br>
-          <p>Damian R.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile.webp" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Some other details about me</h3>
-                <ul class="aboutDetails">
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Specialized in:</strong>
-                    <p>Web Development</p>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Availability:</strong> <span>Full-time, Remote</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Formal Education:</strong>
-                    <span>BBA, International Business</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Languages:</strong>
-                    <span>English, Spanish, and French</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Location:</strong>
-                    <span>Montreal, Canada</span>
-                  </li>
-                </ul>
-          </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <main id="main">
-      <!-- ======= Skills Section ======= -->
-
-      <section id="skills" class="skills section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Skills</h2>
+    <main>
+      <section id="about" class="about">
+        <h1>About</h1>
+        <div class="about__content">
+          <img src="public/profile.webp" alt="profile picture" />
+          <div class="about__content-text">
             <p>
-              These are the main technologies I use for projects. When learning a new language,
-              instead of following whatever comes up as a hot trend, I try to remain loyal to the
-              basics, and incorporate only those skills that would allow me to create synergy among those ones that
-              are already part of my toolkit.
+              I got first exposed to web development when trying to set up a
+              fitness blog on WordPress back in 2016. I never felt I had control
+              about how my little blog looked in this platform, I became
+              obsessed with learning everything I could about web-based
+              solutions that could could create great user interatiions. I
+              believe that things that look beautiful must also be functional
+              and work great. This is my principle in every project I develop.
             </p>
-          </div>
-
-          <div class="stackicons">
-            <img src="./assets/stack-icons/html5.png" alt="HTML" />
-            <img src="./assets/stack-icons/css3.png" alt="CSS" />
-            <img src="./assets/stack-icons/js.png" alt="JS" />
-            <img src="./assets/stack-icons/react.png" alt="react" />
-            <img src="./assets/stack-icons/nodejs.png" alt="nodejs" />
-            <img src="./assets/stack-icons/express.png" alt="express" class="expressIcon" />
-            <img src="./assets/stack-icons/npm.png" alt="npm" />
-            <img src="./assets/stack-icons/github.png" alt="github" />
-            <img src="./assets/stack-icons/git.png" alt="git" />
+            <p>
+              I take pride in saying that everything I've learn as a developer
+              has been due to countless self-teaching hours on free platforms
+              such as FreeCodeCamp, FullStack Open, Udemy, among others..., as
+              well as official documentation from different technologies. Having
+              the freedom to test and apply new technolgies in order to
+              continuing delivering innovative solutions to my clients has
+              always been a great source or motivation.
+            </p>
+            <p>
+              Therefore, if you are looking to increase business activity
+              through solid web solutions that could exceed the expectations of
+              your customers, contact me.
+            </p>
           </div>
         </div>
-      </section>
-      <!-- End Skills Section -->
 
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Services</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section id="services">
+        <h1>Services</h1>
+        <div class="cards__container">
+          <div class="service__card">
+            <img src="public/design.png" alt="service icon" />
+            <h2>Digital Design</h2>
             <p>
-              I have always believed that things that look great must also work
-              great both inside and out. Therefore, I'm obssesed about tackling
-              challenging problems with solutions that sit at the crossroads
-              between beauty and logic.
+              From icons to e-books, crafting beautiful pieces of digital
+              content that appeal to your customers through effective messages.
             </p>
           </div>
-
-          <div class="row">
-            <!--Digital Desing-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box iconbox-blue">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/Digital-Desing.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">Digital Design</a></h4>
-                <p>
-                  From icons to e-books, crafting beautiful pieces of digital
-                  content that appeal to your customers through effective messages.
-                </p>
-              </div>
-            </div>
-
-            <!--Front-End Development-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box iconbox-orange">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/frontend-developtmen.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">Web Solutions</a></h4>
-                <p>
-                  Responsive, fast and solid web solutions designed to be either used internally among your team or by your customers.
-                </p>
-              </div>
-            </div>
-
-            <!--App Development-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box iconbox-yellow">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/app-development.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">Mobile Compatibility</a></h4>
-                <p>
-                  Scalable, reusable architecture for
-                  mobile applications that could connect seamlessly within your platforms.
-                </p>
-              </div>
-            </div>
-
-            <!--e-Commerce Integration-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box iconbox-pink">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/e-commers.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">e-Commerce Integration</a></h4>
-                <p>
-                  Increase sales and customer loyalty by assuring smooth and secure transition at each step of the online purchase process.
-                </p>
-              </div>
-            </div>
-
-            <!--Digital Marketing-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box iconbox-teal">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/digital-marketing.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">Marketing Strategies</a></h4>
-                <p>
-                  Social media strategies, e-mail communcation, and vlog material that could speak at every corner of the web, turning first time visitors into long-time customers.
-                </p>
-              </div>
-            </div>
-
-            <!--Rebranding-->
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box iconbox-red">
-                <div class="icon">
-                  <img
-                    class="img-icon"
-                    src="./assets/img/branding.png"
-                    width="20px"
-                    alt="Front-End"
-                  />
-                </div>
-                <h4><a href="">Analytics</a></h4>
-                <p>
-                  Tracking and analyzing various metrics to gain insights into user behavior, website performance, and the effectiveness of your company's online presence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      
-      <section id="portfolio" class="portfolio section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Portfolio</h2>
+          <div class="service__card">
+            <img src="public/web-solutions.png" alt="service icon" />
+            <h2>Web Solutions</h2>
             <p>
-              Here are some of the projects I have completed for my clients, as well as personal projects I have developed to improve development skills and explore new technologies.
+              Responsive, fast and solid web solutions designed to be either
+              used internally among your team or by your customer
             </p>
           </div>
-
-          <div class="row">
-            <div
-              class="col-lg-12 d-flex justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-project">Projects</li>
-                <li data-filter=".filter-client">Clients</li>
-                <li data-filter=".filter-graphic">Graphics</li>
-              </ul>
-            </div>
+          <div class="service__card">
+            <img src="public/mobile.png" alt="service icon" />
+            <h2>Mobile Compatibility</h2>
+            <p>
+              Scalable, reusable architecture for mobile applications that could
+              connect seamlessly within your platforms.
+            </p>
           </div>
-
-          <div
-            class="row portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="col-lg-4 col-md-6 portfolio-item filter-client">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/atrium.png"
-                  class="img-fluid"
-                  alt="Atrium Physiotherapy"
-                />
-                <div class="portfolio-info">
-                  <h4>Atrium Physiotherapy</h4>
-                  <p>HMTL - CSS - React</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://atrium-physio.vercel.app/"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/atrium"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/personal-portfolio.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Portfolio Website</h4>
-                  <p>HTML - CSS - JS</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://damianroiz.com/"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/portfolio"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-client">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/airbnb-experience-clon.png"
-                  class="img-fluid"
-                  alt="Airbn Experience Clon"
-                />
-                <div class="portfolio-info">
-                  <h4>Airbnb Experience</h4>
-                  <p>HTML- CSS - REACT</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://airbnb-experience-kappa.vercel.app/"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/airbnb-experience"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/ecuprogram-dashboard-app.webp"
-                  class="img-fluid"
-                  alt="Tenzies Game"
-                />
-                <div class="portfolio-info">
-                  <h4>Ecuprogram Dashboard</h4>
-                  <p>HTML - CSS Components - React - React Query - Supabase</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://ecuprogram-dashboard.netlify.app/login"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/ecuprogram-dashboard"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/bankist.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Bankist App</h4>
-                  <p>HTML - CSS - JS</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/damianroiz/bankist"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/bankist"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-client">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/onpoint.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>OnPoint</h4>
-                  <p>HTML - CSS - JS - Netlify</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://damianroiz.com/onpoint/"
-                      target="__blank"
-                      title="Live"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="https://github.com/damianroiz/fitnesswebsite"
-                      target="__blank"
-                      title="Code"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-graphic">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/physio-blog.png"
-                  class="img-fluid"
-                  alt="Physiotherapy Blog"
-                />
-                <div class="portfolio-info">
-                  <h4>Physiotherapy Blog</h4>
-                  <p>Next - GraphCMS - Tailwind</p>
-                  <div class="portfolio-links">
-                    <a
-                    href=""
-                    target="__blank"
-                    title="Live"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a
-                    href="https://github.com/damianroiz/graphql-blog"
-                    target="__blank"
-                    title="Code"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="service__card">
+            <img src="public/online-store.png" alt="service icon" />
+            <h2>e-Commerce Integration</h2>
+            <p>
+              Increase sales and customer loyalty by assuring smooth and secure
+              transition at each step of the online purchase process.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="public/target.png" alt="service icon" />
+            <h2>Marketing Strategies</h2>
+            <p>
+              Social media strategies, e-mail communcation, and vlog material
+              that could speak at every corner of the web, turning first time
+              visitors into long-time customers.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="public/statistics.png" alt="service icon" />
+            <h2>Analytics</h2>
+            <p>
+              Tracking and analyzing various metrics to gain insights into user
+              behavior, website performance, and the effectiveness of your
+              company's online presence.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- End Portfolio Section -->
+      <section id="portfolio">
+        <h1>Portfolio</h1>
 
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>
-              If you are looking for effective web solution that could help
-              up level your business, let’s have a chat!
-            </p>
+        <div class='project__container'>
+            <div class="project__card">
+              <div class="project__info">
+                <h2>Atrium Physiotherapy</h2>
+                <p>HMTL - CSS Components - React - Supabase - Tanstack Query</p>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__info">
+                <h2>Ecuprogram Dashboard</h2>
+                <p>HTML - CSS Components - React - React Query - Supabase</p>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__info">
+                <h2>Portfolio Website
+                </h2>
+                <p>HTML - CSS - JS</p>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__info">
+                <h2>Bankist App
+                </h2>
+                <p>HTML - CSS - JS</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form id="form" onsubmit="{}">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group mt-3">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="5"
-                  placeholder="Message"
-                  id="message"
-                  required
-                ></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading"></div>
-                <div class="error-message"></div>
-                <div class="sent-message"></div>
-              </div>
-              <div class="text-center">
-                <button type="submit" id="send">Send</button>
-              </div>
-            </form>
-          </div>
-
-          <!-- </div> -->
-        </div>
       </section>
-      <!-- End Contact Section -->
+
+      <section id="reviews">
+        <h1>Reviews</h1>
+      </section>
+
+      <section id="contact" class="contact__section">
+        <h1>Contact</h1>
+        <form id="form" method="POST" action="https://formsubmit.co/vortex95@dontsp.am">
+            <fieldset>
+              <div>
+                <label for="name">Name</label>
+                <input type='text' id="name" name="name" placeholder="name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type='email' id="email" name="email" placeholder="email" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <label for="subject">Subject</label>
+              <input type='text' id="subject" name="subject" placeholder='subject' required />
+            </fieldset>
+            <fieldset>
+              <textarea name="message" rows='10' placeholder='write...'>
+            </textarea>
+            </fieldset>
+            <button type="submit">Send</button>
+          </form>
+      </section>
     </main>
-    <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <h3>Damian Roiz</h3>
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="github"><i class="bx bxl-github"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <footer>
+      <div class="footer__container">
+        <div class="social__section">
+          <span>Damian Roiz</span>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/damianroiz/"
+                target="_blank"
+                class="linkedin"
+                ><i class="bx bxl-linkedin"></i>/damianroiz</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/damianroiz"
+                target="_blank"
+                class="github"
+                ><i class="bx bxl-github"></i>/damianroiz</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="copyright">
-          &copy; Copyright <strong><span>MyResume</span></strong
-          >. All Rights Reserved
+        <div class="links__section">
+          <span>Links</span>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sportfolio">Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: [license-url] -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+      </div>
+      <div class="footer__terms">
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <span>&copy; Copyright 2024. All rights reverved.</span>
       </div>
     </footer>
-    <!-- End Footer -->
-
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b687a3253e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("KcC0QWwcniLuuJnfJ");
-      })();
-    </script>
-    <script>
-      /**
-      User ID KcC0QWwcniLuuJnfJ
-          Access Token =JMI5ykt0FD9aUhpsyo10T
-   **/
-    </script>
-    <script src="./forms/form.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

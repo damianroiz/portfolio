@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  /*/////////////Color Palette/////////////////////////*/
+  --c-white: #fefdfd;
+  --c-black: #131815;
+  --c-black-secondary: #121515;
+  --c-bg-dark: #1f2431;
+  --c-blue: #0563bb;
+  --c-blue-secondary: #067ded;
+  --c-link-hover: #a50457;
+  --c-red: #cb0527;
+  --c-red-secondary: #7f0218;
+  --c-green: #5bc92e;
+  --c-green-secondary: #3f8c20;
+
+  --text-sm: 0.65rem;
+  --text-base: 1rem;
+  --text-m: 1.13rem;
+  --text-xl: 1.85rem;
+  --text-2xl: 3.75rem;
+
+  --tablet-bp: 1200px;
+  --transition: all 100ms ease;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--text-base);
+  background-color: var(--c-bg-dark);
+  color: var(--c-white);
+  margin: 0 auto;
+}
+
+h1 {
+  font: var(--text-2xl) 'Libre Baskerville', serif;
+  letter-spacing: 0.009em;
+}
+
+h2,
+h3,
+h4 {
+  font: var(--text-xl) 'Sora', sans-serif;
+}
+
+a {
+  font-family: 'Funnel Sans', serif;
+  text-decoration: none;
+  color: var(--c-blue-secondary);
+}
+
+p {
+  font: 450 var(--text-m) / 1.66em 'Quicksand', non-serif;
+  &:not(:last-child) {
+    margin-bottom: 1.2em;
+  }
+}
+
+ul {
+  list-style: none;
+  font: var(--text-m) 'Sora', serif;
+  letter-spacing: 0.04em;
+}
+
+span {
+  font: var(--text-m) / 1.2em 'Sora', serif;
+  letter-spacing: 0.04em;
+}
+
+button {
+  font-family: 'Sora', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: var(--text-base);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background: var(--teal);
+  }
+  40%,
+  50% {
+    background: transparent;
+  }
+}
