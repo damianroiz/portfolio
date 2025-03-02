@@ -139,7 +139,6 @@ main {
       padding: 0;
     }
     h1 {
-
       padding-left: 0;
     }
   }
@@ -247,14 +246,13 @@ main {
   gap: 2rem;
   justify-items: center;
   overflow: hidden;
-  max-width: 1100px;
-  grid-auto-flow: row dense;
+  max-width: 1500px;
   grid-auto-rows: dense;
 }
 
 .project__card {
   position: relative;
-  width: 480px;
+  width: 600px;
   border: 5px solid var(--c-blue-secondary);
   display: flex;
   justify-content: center;
@@ -263,29 +261,24 @@ main {
   overflow: hidden;
 }
 
-.project__card:first-child {
-  background: center / cover no-repeat
-    url('https://damianroiz.vercel.app/assets/img/portfolio/bankist.png');
-  height: 320px;
+.atrium {
+  background: center / cover no-repeat url('/public/atrium.jpg');
+  aspect-ratio: 1 / calc(541 / 600);
 }
 
-.project__card:nth-child(2) {
-  background: center / cover no-repeat
-    url('https://damianroiz.vercel.app/assets/img/portfolio/bankist.png');
-  height: 380px;
+.dashboard {
+  background: center / cover no-repeat url('/public/dashboard.webp');
+  aspect-ratio: 1 / calc(458 / 600);
 }
 
-.project__card:nth-child(3) {
-  background: center / cover no-repeat
-    url('https://damianroiz.vercel.app/assets/img/portfolio/airbnb-experience-clon.png');
-  height: 580px;
+.ecuprogram {
+  background: center / cover no-repeat url('/public/ecuprogram-small.jpg');
+  aspect-ratio: 1 / 0.5;
 }
 
-.project__card:nth-child(4) {
-  aspect-ratio: 19 / 6;
-  background: center / cover no-repeat
-    url('https://damianroiz.vercel.app/assets/img/portfolio/onpoint.png');
-  height: 250px;
+.wild-oasis {
+  background: center / contain no-repeat url('/public/wild-oasis-small.jpg');
+  aspect-ratio: 1 / calc(438 / 600);
 }
 
 .project__card::before {
@@ -313,21 +306,28 @@ main {
   place-content: center;
   color: transparent;
   z-index: 2;
-  transition: all 350ms ease-in;
+  transition: color 0.4s;
   h2 {
     padding-bottom: 0.5rem;
     text-decoration: underline 2px;
     text-underline-offset: 0.12em;
+    transition: color 350ms ease-in;
   }
   p {
     padding: 0 3rem;
     line-height: 1.5em;
+    transition: color 350ms ease-in;
   }
 }
 
 .project__card:hover .project__info {
-  border: 1px solid #ccc;
-  color: var(--c-black);
+  border: 1px solid var(--c-white);
+  h2 {
+    color: var(--c-blue-secondary);
+  }
+  p {
+    color: var(--c-black-secondary);
+  }
 }
 
 /*
@@ -443,11 +443,11 @@ footer {
     justify-content: center;
     gap: 0.5rem;
     padding-block: 0.8rem;
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-    font-size: var(--text-base);
     li a {
       color: var(--c-white);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      font-size: var(--text-base);
     }
   }
   span {
