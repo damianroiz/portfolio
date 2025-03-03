@@ -45,10 +45,9 @@ const carouselText = [
   { text: 'Lemon', color: 'yellow' },
 ];
 
+charIndex = 0;
+
 async function type() {
-  charIndex = 0;
-  for (words in wordsArray) {
-    console.log(words);
     if (charIndex <= words.length - 1) {
       typedText.textContent += words.charAt(charIndex);
       charIndex++;
@@ -56,7 +55,6 @@ async function type() {
       cursor.classList.add('blink');
       setTimeout(erase, 1000);
     }
-  }
 }
 
 waitForMs(100);

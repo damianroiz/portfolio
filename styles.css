@@ -21,7 +21,8 @@ header {
       rgba(6, 125, 237, 0.7) 0%,
       rgba(5, 14, 187, 0.7) 100%
     ),
-    url(/public/main.webp) no-repeat top / cover;
+    url('https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+      no-repeat top / cover;
   margin-bottom: 5rem;
   position: relative;
 }
@@ -106,12 +107,22 @@ main {
     padding: 0 15rem;
     margin-bottom: 5rem;
     h1 {
-      display: inline-block;
+      --s: 3px;   /* the thickness */
+      --c: var(--c-blue-secondary);   /* the color */
+      --w: 180px; /* the width */
+      --g: 26px;  /* the gap */
+      border-image: 
+         linear-gradient(
+           #0000      calc(50% - var(--s)/2),
+           var(--c) 0 calc(50% + var(--s)/2),
+           #0000    0) 
+        0 1/0 var(--w)/0 calc(var(--w) + var(--g));
+      display: block;
+      width: fit-content;
       position: relative;
-      width: 100%;
       text-align: center;
-      padding: 0 0rem 0.8rem 0rem;
-      margin-bottom: 3rem;
+      padding: 0 0rem 0.7rem 0rem;
+      margin: 0 auto 4.7rem auto;
       text-transform: uppercase;
       padding-top: 1.8rem;
       &::before {
@@ -243,11 +254,13 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   justify-content: center;
-  gap: 2rem;
+  align-items: start;
   justify-items: center;
+  gap: 3rem;
   overflow: hidden;
   max-width: 1500px;
   grid-auto-rows: dense;
+  grid-auto-flow: dense;
 }
 
 .project__card {
@@ -272,13 +285,17 @@ main {
 }
 
 .ecuprogram {
-  background: center / cover no-repeat url('/public/ecuprogram-small.jpg');
+  background: center / cover no-repeat url('/public/ecuprogram.jpg');
   aspect-ratio: 1 / 0.5;
 }
 
 .wild-oasis {
-  background: center / contain no-repeat url('/public/wild-oasis-small.jpg');
+  background: center / contain no-repeat url('/public/wild-oasis.jpg');
   aspect-ratio: 1 / calc(438 / 600);
+  margin-top: -83px;
+  @media screen and (max-width: 1500px) {
+    margin-top: 0;
+  }
 }
 
 .project__card::before {
