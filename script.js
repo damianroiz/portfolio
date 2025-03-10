@@ -45,16 +45,16 @@ const carouselText = [
   { text: 'Lemon', color: 'yellow' },
 ];
 
-charIndex = 0;
+// charIndex = 0;
 
 async function type() {
-    if (charIndex <= words.length - 1) {
-      typedText.textContent += words.charAt(charIndex);
-      charIndex++;
-    } else {
-      cursor.classList.add('blink');
-      setTimeout(erase, 1000);
-    }
+  if (charIndex <= words.length - 1) {
+    typedText.textContent += words.charAt(charIndex);
+    charIndex++;
+  } else {
+    cursor.classList.add('blink');
+    setTimeout(erase, 1000);
+  }
 }
 
 waitForMs(100);
@@ -65,4 +65,28 @@ function waitForMs(ms) {
 
 document.addEventListener('DOMContentLoaded', () => {
   type();
+});
+
+/// FAQ accordion
+
+const questions = document.querySelectorAll('.faq__question');
+
+const questioniD = questions.length;
+
+questions.forEach((question, id) => {
+  question.addEventListener('click', (e) => {
+    e.preventDefault();
+    questions.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove('active'); // Remove 'active' class to reset arrow rotation
+        item.nextElementSibling.style.maxHeight = null; // Collapse the answer
+      }
+    });
+    question.classList.toggle('active');
+
+    const answer = question.nextElementSibling;
+    answer.style.maxHeight
+      ? (answer.style.maxHeight = null)
+      : (answer.style.maxHeight = answer.scrollHeight + 'px');
+  });
 });

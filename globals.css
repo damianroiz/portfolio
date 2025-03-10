@@ -11,6 +11,8 @@
 :root {
   /*/////////////Color Palette/////////////////////////*/
   --c-white: #fefdfd;
+  --c-white-secondary: #f2f1f1;
+  --c-grey: #d0d7de;
   --c-black: #131815;
   --c-black-secondary: #121515;
   --c-bg-dark: #1f2431;

@@ -44,6 +44,7 @@ nav.sticky {
   position: fixed;
   margin: 0.8rem;
   z-index: 1;
+  overflow: hidden;
 }
 
 .nav__menu {
@@ -107,16 +108,16 @@ main {
     padding: 0 15rem;
     margin-bottom: 5rem;
     h1 {
-      --s: 3px;   /* the thickness */
-      --c: var(--c-blue-secondary);   /* the color */
+      --s: 3px; /* the thickness */
+      --c: var(--c-blue-secondary); /* the color */
       --w: 180px; /* the width */
-      --g: 26px;  /* the gap */
-      border-image: 
-         linear-gradient(
-           #0000      calc(50% - var(--s)/2),
-           var(--c) 0 calc(50% + var(--s)/2),
-           #0000    0) 
-        0 1/0 var(--w)/0 calc(var(--w) + var(--g));
+      --g: 26px; /* the gap */
+      border-image: linear-gradient(
+          #0000 calc(50% - var(--s) / 2),
+          var(--c) 0 calc(50% + var(--s) / 2),
+          #0000 0
+        )
+        0 1/0 var(--w) / 0 calc(var(--w) + var(--g));
       display: block;
       width: fit-content;
       position: relative;
@@ -415,9 +416,78 @@ form > button {
 
 input,
 textarea,
-button {
+form button {
   border-radius: 5px;
   border: 1px solid var(--c-blue-secondary);
+}
+
+/*
+/////////////////// FAQ SECTION 
+////////////////////////////////////////
+*/
+
+.faq__container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.faq__question {
+  position: relative;
+  background-color: var(--c-white);
+  border: none;
+  padding: 1.4rem 2rem;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  cursor: pointer;
+  text-transform: none;
+  transition: all 300ms ease; 
+}
+
+.faq__question:focus {
+  outline: 1px solid var(--c-grey);
+}
+
+.faq__question:hover {
+  background-color: var(--c-grey);
+}
+
+.faq__question .arrow {
+  color: var(--c-blue-secondary);
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  transition: transform 300ms ease;
+}
+
+.faq__question.active .arrow {
+  transform: rotate(180deg);
+}
+
+
+.faq__item {
+  border-bottom: 1px solid var(--c-grey);
+  overflow: hidden;
+}
+
+.faq__question.active {
+  border-bottom: 2px solid var(--c-blue-secondary);
+}
+
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+  background-color: var(--c-white-secondary);
+}
+
+.faq__answer p {
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--c-black-secondary);
 }
 
 /*
