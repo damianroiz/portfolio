@@ -287,7 +287,7 @@ main {
 
 .ecuprogram {
   background: center / cover no-repeat url('/public/ecuprogram.jpg');
-  aspect-ratio: 1 / 0.5;
+  aspect-ratio: 1 / calc(398 / 600);
 }
 
 .wild-oasis {
@@ -320,32 +320,73 @@ main {
 .project__info {
   width: calc(90% - 20px);
   height: calc(90% - 20px);
+  /* margin-block: 2rem;
+  padding-block: 2rem; */
   text-align: center;
-  place-content: center;
-  color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   z-index: 2;
-  transition: color 0.4s;
-  h2 {
-    padding-bottom: 0.5rem;
-    text-decoration: underline 2px;
-    text-underline-offset: 0.12em;
-    transition: color 350ms ease-in;
+  transition: transform 400ms ease-in;
+  transform: scale(0, 0);
+}
+
+.project__info h2 {
+  padding-bottom: 0.5rem;
+  text-decoration: underline 2px;
+  text-underline-offset: 0.12em;
+  transition: color 350ms ease-in;
+  color: var(--c-blue-secondary);
+}
+
+.project__info ul {
+  margin-block: 1rem;
+}
+.project__info ul li {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  justify-items: center;
+  text-align: right;
+  align-items: center;
+  padding: 0 3rem;
+  line-height: 1.5em;
+  transition: color 350ms ease-in;
+  color: var(--c-black-secondary);
+}
+
+.link__icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.link__icons a {
+  background-color: var(--c-blue);
+  color: var(--c-white);
+  font-size: var(--fs-sm);
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--c-blue-secondary);
   }
-  p {
-    padding: 0 3rem;
-    line-height: 1.5em;
-    transition: color 350ms ease-in;
-  }
+}
+
+.fa-circle-check {
+  color: var(--c-green);
+}
+
+.link__icons a i {
+  margin-right: 8px;
 }
 
 .project__card:hover .project__info {
   border: 1px solid var(--c-white);
-  h2 {
-    color: var(--c-blue-secondary);
-  }
-  p {
-    color: var(--c-black-secondary);
-  }
+  transform: scale(1, 1);
 }
 
 /*
@@ -442,7 +483,7 @@ form button {
   display: flex;
   cursor: pointer;
   text-transform: none;
-  transition: all 300ms ease; 
+  transition: all 300ms ease;
 }
 
 .faq__question:focus {
@@ -465,7 +506,6 @@ form button {
   transform: rotate(180deg);
 }
 
-
 .faq__item {
   border-bottom: 1px solid var(--c-grey);
   overflow: hidden;
@@ -474,7 +514,6 @@ form button {
 .faq__question.active {
   border-bottom: 2px solid var(--c-blue-secondary);
 }
-
 
 .faq__answer {
   max-height: 0;
