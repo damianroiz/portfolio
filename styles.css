@@ -90,8 +90,41 @@ nav.sticky {
   align-self: flex-start;
   margin: auto 3rem;
   line-height: 1.55;
-  h1 {
-    font-size: 3.5rem;
+}
+
+.typewriter-container h2 {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  gap: 3px;
+}
+
+.featured-text {
+  font-size: var(--text-xl);
+  color: var(--light);
+  display: inline-block;
+  padding: 0 0.55rem;
+}
+
+.cursor {
+  display: inline-block;
+  height: 40px;
+  width: 3px;
+  background: var(--c-green);
+}
+
+.cursor.blink {
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background: var(--c-green);
+  }
+  40%,
+  50% {
+    background: transparent;
   }
 }
 

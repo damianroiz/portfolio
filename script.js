@@ -24,38 +24,52 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 
-// const containerObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: `-${navHeight}px`,
-// });
-
 headerObserver.observe(header);
-// containerObserver.observe(header);
 
 /// Typewriter effect
 const typedText = document.querySelector('.featured-text');
 const cursor = document.querySelector('.cursor');
 
-const wordsArray = ['development', 'design', 'marketing'];
+const wordsArray = ['web development', 'digital design', 'online marketing'];
 
-const carouselText = [
-  { text: 'Apple', color: 'red' },
-  { text: 'Orange', color: 'orange' },
-  { text: 'Lemon', color: 'yellow' },
+const TypewriterBackground = [
+  { text: wordsArray[0], color: '#ee4035' },
+  { text: wordsArray[1], color: '#f37736' },
+  { text: wordsArray[2], color: '#e1b12c' },
 ];
 
-// charIndex = 0;
+let wordsArrayIndex = 0;
+let charIndex = 0;
 
-async function type() {
-  if (charIndex <= words.length - 1) {
-    typedText.textContent += words.charAt(charIndex);
+const erase = () => {
+  if (charIndex > 0) {
+    cursor.classList.remove('blink');
+    typedText.textContent = wordsArray[wordsArrayIndex].slice(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 80);
+  } else {
+    cursor.classList.add('blink');
+    wordsArrayIndex++;
+    if (wordsArrayIndex > wordsArray.length - 1) {
+      wordsArrayIndex = 0;
+    }
+    setTimeout(type, 1000);
+  }
+};
+
+const type = () => {
+  const currentBackground = TypewriterBackground[wordsArrayIndex].color;
+  typedText.style.backgroundColor = currentBackground;
+  if (charIndex <= wordsArray[wordsArrayIndex].length - 1) {
+    cursor.classList.remove('blink');
+    typedText.textContent += wordsArray[wordsArrayIndex].charAt(charIndex);
     charIndex++;
+    setTimeout(type, 120);
   } else {
     cursor.classList.add('blink');
     setTimeout(erase, 1000);
   }
-}
+};
 
 waitForMs(100);
 
@@ -68,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /// FAQ accordion
-
 const questions = document.querySelectorAll('.faq__question');
 
 const questioniD = questions.length;
