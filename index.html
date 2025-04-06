@@ -20,7 +20,7 @@
       //////////// Portfolio -->
 
     <header>
-      <div class="header__container">
+      <div class="header__container lazy-bg">
         <nav>
           <ul class="nav__menu">
             <li><a href="#about">About</a></li>
@@ -68,10 +68,17 @@
     //////////// About -->
 
     <main>
-      <section id="about" class="about">
+      <section id="about" class="section section__hidden">
         <h1>About</h1>
         <div class="about__content">
-          <img src="public/profile.webp" alt="profile picture" />
+          <div class="about__img-container">
+            <img
+              src="public/profile-lowres.jpg"
+              data-src="public/profile.webp"
+              alt="profile picture"
+              class="lazy-load"
+            />
+          </div>
           <div class="about__content-text">
             <p>
               I got first exposed to web development when trying to set up a
@@ -104,7 +111,7 @@
       //////////////////////////////////////////////////////////////////////////
       //////////// Services Section -->
 
-      <section id="services">
+      <section id="services" class="section section__hidden">
         <h1>Services</h1>
         <div class="cards__container">
           <div class="service__card">
@@ -165,7 +172,7 @@
       //////////////////////////////////////////////////////////////////////////
       //////////// Portfolio -->
 
-      <section id="portfolio">
+      <section id="portfolio" class="section section__hidden">
         <h1>Portfolio</h1>
         <div class="project__container">
           <div class="project__card atrium">
@@ -190,13 +197,13 @@
                 <li><i class="fa-solid fa-circle-check"></i>Ongoing Support</li>
               </ul>
               <div class="link__icons">
+                <a href="https://github.com/damianroiz/atrium" target="_blank">
+                  <i class="fa-solid fa-code"></i>Code
+                </a>
                 <a
                   href="https://www.atriumphysiotherapy.com/home"
                   target="_blank"
                 >
-                  <i class="fa-solid fa-code"></i>Code
-                </a>
-                <a href="https://github.com/damianroiz/atrium" target="_blank">
                   <i class="fa-solid fa-display"></i>Live
                 </a>
               </div>
@@ -323,7 +330,7 @@
       //////////////////////////////////////////////////////////////////////////
       //////////// Faqs -->
 
-      <section id="faqs">
+      <section id="faqs" class="section section__hidden">
         <h1>FAQS</h1>
         <div class="faq__container">
           <div class="faq__item">
@@ -415,7 +422,7 @@
       //////////////////////////////////////////////////////////////////////////
       //////////// Contact -->
 
-      <section id="contact" class="contact__section">
+      <section id="contact" class="section contact__section section__hidden">
         <h1>Contact</h1>
         <form
           id="form"

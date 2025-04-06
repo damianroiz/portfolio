@@ -16,14 +16,26 @@ header {
   align-items: center;
   height: 500px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.lazy-bg {
   background: linear-gradient(
       90deg,
       rgba(6, 125, 237, 0.7) 0%,
       rgba(5, 14, 187, 0.7) 100%
     ),
-    url('/public/background.jpg') no-repeat top / cover;
-  margin-bottom: 5rem;
-  position: relative;
+    url('/public/background-lowres.jpg') no-repeat top / cover;
+}
+
+.loaded-bg {
+  background: linear-gradient(
+      90deg,
+      rgba(6, 125, 237, 0.7) 0%,
+      rgba(5, 14, 187, 0.7) 100%
+    ),
+    url('/public/background.webp') no-repeat top / cover;
 }
 
 nav {
@@ -188,43 +200,56 @@ main {
   }
 }
 
+.section {
+  margin-top: 3rem;
+  transition: all 800ms ease-in-out;
+}
+
+.section__hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy_load {
+  filter: blur(25px);
+}
+
 /*
 /////////////////// ABOUT
 ////////////////////////////////////////
 */
 
-.about {
-  .about__content {
-    display: flex;
-    /* .about__content-text {
-            padding: 0;
-        } */
-  }
+.about__content {
+  display: flex;
+  gap: 20px;
+}
+
+.about__img-container {
+  width: 350px;
+  flex: 0 0 350px;
   img {
     align-self: start;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    max-width: 300px;
+    width: 100%;
     margin-right: 2.8rem;
-    flex: 1;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .about__content {
-      flex-direction: column;
-      align-content: center;
-      .about__content-text {
-        padding: 0 10vw;
-      }
-    }
-    img {
-      margin: 0 0 2.8rem 0;
-      align-self: center;
-      max-width: 350px;
-    }
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .about__content {
+    flex-direction: column;
+    align-content: center;
+    .about__content-text {
+      padding: 0 10vw;
+    }
+  }
+  .about__img-container {
+    margin: 0 0 2.8rem 0;
+    align-self: center;
+    max-width: 350px;
+  }
+}
 /*
 /////////////////// SERVICES
 ////////////////////////////////////////
