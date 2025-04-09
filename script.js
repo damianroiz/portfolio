@@ -105,9 +105,28 @@ questions.forEach((question, id) => {
 });
 
 ///////////////////////
+// lazy background
+
+const headerBg = document.querySelector('.header__container');
+
+const highResImageUrl = '/public/background.webp';
+
+const preloadImage = (url, callback) => {
+  const img = new Image();
+  img.src = url;
+  img.onload = callback;
+};
+
+preloadImage(highResImageUrl, () => {
+  headerBg.classList.remove('lazy-bg');
+  headerBg.classList.add('loaded-bg');
+});
+
+
+///////////////////////
 // Lazy loading images
 const imgTargets = document.querySelectorAll('img[data-src]');
-const background = document.querySelector('header-container')
+const background = document.querySelector('header-container');
 
 const loadImg = (entries, observer) => {
   const [entry] = entries;

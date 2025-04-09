@@ -27,6 +27,7 @@ header {
       rgba(5, 14, 187, 0.7) 100%
     ),
     url('/public/background-lowres.jpg') no-repeat top / cover;
+  transition: background 0.5s ease-in-out;
 }
 
 .loaded-bg {
