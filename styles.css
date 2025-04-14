@@ -97,6 +97,10 @@ nav.sticky {
   display: block;
 }
 
+.nav__mobile {
+  display: none;
+}
+
 .header__title {
   margin-left: 2rem;
   align-self: flex-start;
@@ -222,7 +226,12 @@ main {
 
 .about__content {
   display: flex;
+  justify-content: center;
   gap: 20px;
+}
+
+.about__content-text {
+  max-width: 650px;
 }
 
 .about__img-container {
