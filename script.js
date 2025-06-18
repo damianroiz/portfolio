@@ -6,8 +6,6 @@ const nav = document.getElementsByTagName('nav')[0];
 const navHeight = nav.getBoundingClientRect().height;
 const headerHeight = header.getBoundingClientRect().height;
 
-console.log(header);
-
 const stickyNav = (entries) => {
   entries.forEach((entry, observer) => {
     if (entry.target === header) {
@@ -20,7 +18,7 @@ const stickyNav = (entries) => {
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0.7,
+  threshold: 0.5,
   rootMargin: `-${navHeight}px`,
 });
 
